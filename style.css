@@ -1,0 +1,198 @@
+
+.header {
+    position: relative;
+    top: 0;
+    height: 650px;
+    background: url(illustration_header.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+.header .logo {
+    text-align: center;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+}
+section {
+    padding: 80px 0;
+}
+.section-install {
+    text-align: center;
+}
+
+.inline-list {
+    padding: 0;
+}
+.inline-list>li {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    margin-right: 2.5rem;
+}
+.inline-list>li a {
+    padding: 1.375rem;
+}
+.inline-list>li img {
+    max-width: 100%;
+}
+.section-install .inline-list {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    margin: 0 auto;
+    list-style: none;
+}
+.section-install a:focus, .section-install a:hover {
+    text-decoration: none;
+}
+.section-trailer {
+    text-align: center;
+    background: url(bgtexture1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.section-trailer .player-container {
+    background-repeat: no-repeat;
+    background-image: url(screenshot_frame.png);
+    background-size: 100% 100%;
+    padding: 16px;
+    margin: auto;
+    max-width: 800px;
+}
+
+.section-trailer #ytplayer {
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+}
+.section-trailer #ytplayer iframe, .section-trailer #ytplayer object, .section-trailer #ytplayer embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.poetsenoneregular-ready .section-description h1 {
+    font-family: 'poetsenoneregular', Arial, sans-serif;
+}
+.section-description h1 {
+    text-transform: uppercase;
+    font-size: 72px;
+}
+.section-description h3 {
+    font-size: 32px;
+}
+.montserratregular-ready .section-description {
+    font-family: 'montserratregular', Arial, sans-serif;
+}
+.section-description {
+    color: #2BB3D2;
+    font-size: 24px;
+}
+.section-description li {
+    list-style-image: url(bullet_green.png);
+}
+.section-description .img-both {
+    margin: 20px auto;
+}
+.section-description .col-chars{
+    position: relative;
+}
+.section-description .col-chars img{
+    position: absolute;
+    bottom: 0;
+}
+
+.section-carousel {
+    text-align: center;
+    background: url(bgtexture2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'poetsenoneregular';
+    src: url('font/PoetsenOne-Regular-webfont.eot');
+    src: url('font/PoetsenOne-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/PoetsenOne-Regular-webfont.woff') format('woff'),
+    url('font/PoetsenOne-Regular-webfont.ttf') format('truetype'),
+    url('font/PoetsenOne-Regular-webfont.svg#poetsenoneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('font/Montserrat-Regular-webfont.eot');
+    src: url('font/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/Montserrat-Regular-webfont.woff') format('woff'),
+    url('font/Montserrat-Regular-webfont.ttf') format('truetype'),
+    url('font/Montserrat-Regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section-carousel .flexslider-container {
+    background-repeat: no-repeat;
+    background-image: url(screenshot_frame.png);
+    background-size: 100% 100%;
+    padding: 20px 16px;
+    margin: auto;
+    max-width: 800px;
+}
+.section-carousel .flexslider {
+    margin: 0;
+    border: none;
+}
+.section-carousel .flex-direction-nav a {
+    height: 50px;
+}
+.section-footer {
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+
+@media (max-width: 640px) {
+    .header {
+        height: 420px;
+    }
+    section {
+        padding: 50px 0;
+    }
+    .section-trailer {
+        padding: 8% 0;
+    }
+    .section-trailer .player-container {
+        padding: 12px;
+    }
+    .section-install li.social img{
+        height: 90px;
+    }
+    .section-description h1 {
+        font-size: 64px;
+    }
+    .section-carousel {
+        padding: 8% 0;
+    }
+    .section-carousel .flexslider-container {
+        padding: 12px;
+    }
+}
+@media (max-width: 420px) {
+    .header {
+        height: 300px;
+    }
+}
+@media (max-width: 923px) {
+    .header .logo img {
+        width: 100%;
+    }
+}
+

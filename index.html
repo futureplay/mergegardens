@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Start your gardening journey now!">
+
+    <title>Merge Gardens</title>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@futureplaygames">
+    <meta name="twitter:title" content="Merge Gardens">
+    <meta name="twitter:description" content="Start your gardening journey now!">
+    <meta name="twitter:creator" content="@futureplaygames">
+    <meta name="twitter:image" content="http://www.mergegardens.com/app_invite_preview.png">
+
+
+    <meta property="og:title" content="Merge Gardens"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.mergegardens.com"/>
+    <meta property="og:image" content="http://www.mergegardens.com/app_invite_preview.png"/>
+    <meta property="og:description" content="Start your gardening journey now!"/>
+
+    <link rel="icon" type="image/png" href="BrowserIcon.png" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="flexslider.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="jquery.flexslider-min.js"></script>
+    <script src="fontfaceobserver.js"></script>
+    <script>
+        var observeFont = function(fontName) {
+            var observer = new FontFaceObserver(fontName);
+            observer.check(null, 5000).then(function () {
+                $("body").addClass(fontName + "-ready")
+            });
+        }
+        observeFont('poetsenoneregular');
+        observeFont('montserratregular');
+    </script>
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<section class="header container-fluid">
+    <div class="col-sm-12">
+        <div class="logo">
+            <img src="logo_header.png" alt="Merge Gardens">
+        </div>
+    </div>
+</section>
+<section class="section-install container">
+    <div class="col-sm-12">
+        <ul class="inline-list download-list">
+            <li class="btn-download-app btn-download-ios">
+                <a href="https://apps.apple.com/us/app/merge-gardens/id1464675244" class="track">
+                    <img src="icon_appstore.png" alt="Download on the AppStore">
+                </a>
+            </li>
+            <li class="btn-download-app btn-download-android">
+                <a href="https://play.google.com/store/apps/details?id=com.futureplay.mergematch" class="track">
+                    <img alt="Get it on Google Play" src="en-play-badge.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="section-trailer container-fluid">
+    <div class="player-container">
+        <div id="ytplayer"><iframe width="560" height="315" src="https://www.youtube.com/embed/qNEWyF-8WUs?rel=0" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+</section>
+<section class="section-footer container">
+    <div class="col-sm-12">
+        <p>
+            <a href="http://futureplaygames.com" class="track"><img src="futureplay_footerLogo.jpg"></a>
+        </p>
+        <p>
+            &copy; 2021 <a href="http://futureplaygames.com" class="track">Futureplay Ltd</a>. All rights reserved.
+        </p>
+        <p>
+            <a href="http://futureplaygames.com/privacypolicy.html" class="track">Privacy Policy</a> | <a href="http://futureplaygames.com/termsofservice.html" class="track">Terms of Service</a> | <a href="mailto:
+&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#102;&#117;&#116;&#117;&#114;&#101;&#112;&#108;&#097;&#121;&#103;&#097;&#109;&#101;&#115;&#046;&#099;&#111;&#109;">
+            Support</a>
+        </p>
+    </div>
+
+</section>
+</body>
+</html>
